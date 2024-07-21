@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Container -->
+<div class="flex justify-center items-center h-screen">
+    <!-- Image Section -->
+    <div class="hidden md:block md:w-1/2">
+        <img src="./img/hero-bg.png" alt="Login Image" class=" px-12">
+    </div>
+    <!-- Login Form Section -->
+    <div class="md:w-1/2 px-32 py-8 md:py-0">
+        <h2 class="text-3xl font-bold mb-4">Login</h2>
+        <form class="space-y-4" action="userlogin" method="post">
+            <div>
+                <label for="email" class="block text-gray-700">Email</label>
+                <input type="text" id="username" name="username" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-400" placeholder="Enter your email">
+            </div>
+            <div>
+                <label for="password" class="block text-gray-700">Password</label>
+                <input type="password" id="password" name="password" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-400" placeholder="Enter your password">
+            </div>
+            <div>
+                <button type="submit" class="w-full bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
